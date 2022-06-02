@@ -1,0 +1,451 @@
+/* === Google fonts import === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: #4070f4;
+}
+.nav-link{
+    color: #4070f4;
+    justify-content: space-between;
+    font-size: large;
+}
+.nav-link:hover{
+    color: #fff;
+    transition: 0.3s;
+    background-color: #4070f4;
+    border-radius: 6px;
+    font-size: x-large;
+}
+.nav-item{
+    font-weight: 500;
+    padding-left: 35px;
+}
+.btn0{
+    height: 52px;
+    width: 130px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: #4070f4;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.btn0:hover{
+    background-color: #265df2;
+    transition: all 0.4s;
+    font-size: large;
+}
+.btn1{
+    height: 52px;
+    width: 130px;
+    background: transparent;
+    color: #4070f4;
+    outline: none;
+    border: 2px solid #4070f4;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.btn1:hover{
+    background-color: #265df2;
+    color: #fff;
+    transition: all 0.4s;
+    font-size: larger;
+    border: none;
+    outline: none;
+}
+header span{
+    color: #265df2;
+}
+header span i{
+    font-size: 30px;
+    align-self: center;
+    justify-content: center;
+}
+
+/* =====================main section===================== */
+
+.main{
+    background-image: url("imgs/back1.jpg") no-repeat;
+    background: rgb(210, 215, 226);
+    background-size: cover;
+    min-height: 95vh;
+    width: 100%;
+}
+.main h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #265df2;
+    justify-content: center;
+    align-items: center;
+}
+.main input{
+    height: 71px;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 6px;
+}
+.btn2{
+    height: 70px;
+    width: 10%;
+    background-color: #4070f4;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-left: -4px;
+}
+.btn2:hover{
+    background-color: #265df2;
+    transition: all 0.4s;
+}
+.btn2 i{
+    font-size: 17px;
+}
+.main input::placeholder{
+    color: rgb(8, 72, 250);
+}
+
+/* ==================header===================== */
+.dropdown .btnuser{
+    height: 52px;
+    width: 130px;
+    background: transparent;
+    color: #4070f4;
+    outline: none;
+    border: 2px solid #4070f4;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.dropdown .btnuser i{
+    font-size: 17px;
+    color: #4070f4;
+}
+
+.btnuser:hover{
+    background-color: #265df2;
+    color: #fff;
+    font-size: larger;
+    transition: all 0.4s;
+}
+
+.btnuser:hover i{
+    color: #fff;
+}
+
+/* ==================Footer===================== */
+footer h5{
+    color: #265df2; 
+}
+
+/* =================== Login ==================== */
+
+
+#loginContainer{
+    margin-top: 150px;
+    margin-left: 20%;
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.container .forms{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: height 0.2s ease;
+}
+.container.active .forms{
+    height: 600px;
+}
+
+.container .form{
+    width: 100%;
+    padding: 30px;
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+}
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.filter-condition{
+    padding: 20px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #265df2;
+}
+
+.filter-condition select{
+    width: 120px;
+    padding: 0 0 0 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #265df2;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* =================== Register ================== */
+
+#registerContainer{
+    margin-top: 70px;
+    margin-left: 20%;
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    height: 650px;
+}
+
+/* ================= all recipes ================ */
+
+  .blue{
+      color: #265df2;
+  }
+  .ceta h1{
+      font-size: 3.5rem;
+      color: #265df2;
+  }
+
+  .card{
+      border-radius: 10px;
+      align-items: center;
+
+  }
+
+  .ceta .card:hover{
+      color: #265df2;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: -1px 1px 22px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 22px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 22px -11px rgba(0,0,0,0.75);
+  }
+
+.ceta{
+    background: url("/imgs/back2.jpg") no-repeat;
+    background: rgb(210, 215, 226);
+    background-size: cover;
+    min-height: 95vh;
+    width: 100%;
+}
+
+/*================ single recipe==============*/
+
+.recipe-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .recipe-icons i {
+    font-size: 2.5rem;
+    color: #265df2;
+  }
+
+  .recipe-icons h5,
+.recipe-icons p {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.recipe-icons p {
+    color: #333;
+}
+
+.recipe-writer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.7em;
+    font-weight: 600;
+
+}
+
+.recipe-writer a {
+    background: #fff;
+    border-radius: 4px;
+    color: #4070f4;
+    padding: 0.05rem 0.5rem;
+    margin: 0 0.25rem;
+    text-transform: capitalize;
+}
+
+.single-instruction  p {
+    color: #333;
+  }
+
+  .single-instruction .steps{
+    text-transform: uppercase;
+    border-bottom: 2px solid #265df2;
+    padding-bottom: 0.75rem; 
+    font-weight: 600;
+  }
+
+  .second-column {
+    display: grid;
+    row-gap: 2rem;
+  }
+  
+  .single-ingredient {
+    /* border-bottom: 2px solid black; */
+    padding-bottom: 0.75rem;
+    color: #265df2;
+  }
+
+  
+  .recipe-content {
+    padding: 3rem 0;
+    display: grid;
+    gap: 2rem 5rem;
+  }
+
+  .singleRecipeContainer{
+    background: rgb(210, 215, 226);
+    min-height: 95vh;
+    width: 100%;
+  }
+
+  .singleRecipeContainer .img-fluid{
+      border-radius: 6px;
+  }
+
+  .strikethrough:checked + span{
+    text-decoration:line-through
+  }
